@@ -6,47 +6,47 @@ import java.util.EmptyStackException;
 public class StackCheck {
     public static void main(String[] args) {
         Stack<String> cards = new Stack<>();
-        cards.push("Валет пик");
-        cards.push("Король пик");
-        cards.push("Дама пик");
-        System.out.println("Колода: " + cards.getList());
-        System.out.println("Верхняя карта (подсмотреть): " + cards.peek());
-        System.out.println("Положили в колоду туза пик");
-        cards.push("Туз пик");
-        System.out.println("Верхняя карта (подсмотреть): " + cards.peek());
-        System.out.println("Забрать из колоды верхнюю карту: " + cards.pop());
-        System.out.println("Колода: " + cards.getList());
+        cards.push("Jack of spades");
+        cards.push("King of spades");
+        cards.push("Queen of spades");
+        System.out.println("Cards: " + cards.getList());
+        System.out.println("See upper card: " + cards.peek());
+        System.out.println("Push ace of spades to the cards");
+        cards.push("Ace of spades");
+        System.out.println("See upper card: " + cards.peek());
+        System.out.println("Return upper and remove it: " + cards.pop());
+        System.out.println("Cards: " + cards.getList());
 
         Stack<Integer> numbers = new Stack<>();
 
-        System.out.println("Пустой стек чисел: " + numbers.getList());
+        System.out.println("Empty Integer stack: " + numbers.getList());
         try {
-            System.out.println("Подсмотреть: " + numbers.peek());
-            System.out.println("извлечь верхнее число и удалить: " + numbers.pop());
+            System.out.println("See upper: " + numbers.peek());
+            System.out.println("Return upper and remove it: " + numbers.pop());
         } catch (EmptyStackException e){
-            System.out.println("Стек пуст, операции выполнить невозможно");
+            System.out.println("The stack is empty, operation impossible");
         }
 
 
-        Stack<Double> doubles = new Stack<Double>();
+        Stack<Double> doubles = new Stack<>();
         doubles.push(4.0);
         doubles.push(5.9);
         doubles.push(127.1);
-        System.out.println("Стек даблов: " + doubles.getList());
-        System.out.println("Подсмотреть верхний: " + doubles.peek());
-        System.out.println("Забрать верхний и удалить: " + doubles.pop());
-        System.out.println("Стек даблов: " + doubles.getList());
-        System.out.println("Очистить стек");
+        System.out.println("Doubles stack: " + doubles.getList());
+        System.out.println("See upper: " + doubles.peek());
+        System.out.println("Return upper and remove it: " + doubles.pop());
+        System.out.println("Doubles stack: " + doubles.getList());
+        System.out.println("Clear stack");
         doubles.clear();
-        System.out.println("Стек даблов: " + doubles.getList());
+        System.out.println("Doubles stack: " + doubles.getList());
 
         ArrayList<String> wordlist = new ArrayList<>();
         wordlist.add("port");
         wordlist.add("nord");
         wordlist.add("sort");
-        Stack<String> words = new Stack<String>(wordlist);
-        System.out.println("Стек слов: " + words.getList());
-        System.out.println("Подглядеть верхнее слово: " + words.peek());
+        Stack<String> words = new Stack<>(wordlist);
+        System.out.println("Words stack: " + words.getList());
+        System.out.println("See upper word: " + words.peek());
     }
 
 

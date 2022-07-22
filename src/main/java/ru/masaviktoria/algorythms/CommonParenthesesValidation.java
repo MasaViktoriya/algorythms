@@ -9,16 +9,16 @@ public class CommonParenthesesValidation {
     public static void main(String[] args) {
         Pattern pattern = Pattern.compile("[^\\(\\)]");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите скобочную последовательность из обычных скобок");
+        System.out.println("Insert common parentheses line");
         String parenthesesLine = scanner.nextLine();
         if(!pattern.matcher(parenthesesLine).find()) {
             if (validate(parenthesesLine)) {
-                System.out.println("Последовательность верна");
+                System.out.println("Parentheses are valid");
             } else {
-                System.out.println("Последовательность не верна");
+                System.out.println("Parentheses are invalid");
             }
         }else {
-            System.out.println("Введено некорректное выражение");
+            System.out.println("Incorrect input");
         }
     }
 

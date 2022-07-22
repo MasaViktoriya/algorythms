@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class SelectionSort {
     public static void main(String[] args) {
         int[] array = ArrayForSorting.createIntArray();
-        System.out.println("исходный массив: " + Arrays.toString(array));
+        System.out.println("Array: " + Arrays.toString(array));
         selectionSort(array);
-        System.out.println("Отсортированный выбором массив: " + Arrays.toString(array));
+        System.out.println("Selection sorted array: " + Arrays.toString(array));
     }
 
     private static void selectionSort(int[] array) {

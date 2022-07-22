@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class BubbleSort {
     public static void main(String[] args) {
         int[] array = ArrayForSorting.createIntArray();
-        System.out.println("исходный массив: " + Arrays.toString(array));
+        System.out.println("Array: " + Arrays.toString(array));
         bubbleSort(array);
-        System.out.println("Отсортированный пузырьком массив: " + Arrays.toString(array));
+        System.out.println("Bubble sorted array: " + Arrays.toString(array));
     }
 
     private static void bubbleSort(int[] array) {

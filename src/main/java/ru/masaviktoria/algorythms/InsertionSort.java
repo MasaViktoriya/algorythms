@@ -6,9 +6,9 @@ public class InsertionSort {
 
     public static void main(String[] args) {
         int[] array = ArrayForSorting.createIntArray();
-        System.out.println("исходный массив: " + Arrays.toString(array));
+        System.out.println("Array: " + Arrays.toString(array));
         insertionSort(array);
-        System.out.println("Отсортированный вставками массив: " + Arrays.toString(array));
+        System.out.println("Insertion sorted array: " + Arrays.toString(array));
     }
 
     private static void insertionSort(int[] array) {
